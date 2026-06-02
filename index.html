@@ -3,138 +3,311 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VocabSwipe | Learn English Vocabulary Faster</title>
+  <title>VocabSwipe - A1-C2 English Vocabulary Builder</title>
+  <meta name="description" content="VocabSwipe helps English learners master 9,000+ A1-C2 words with swipe cards, quizzes, pronunciation, progress tracking, badges, and offline learning." />
+  <meta name="theme-color" content="#111827" />
+  <link rel="icon" type="image/png" href="assets/vocabswipe-newturuncu.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav-container">
-      <a class="brand" href="#home">
-        <img src="assets/vocabswipe-newturuncu.png" alt="VocabSwipe Logo" class="brand-logo" />
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-shell">
+      <a class="brand" href="#home" aria-label="VocabSwipe home">
+        <img src="assets/vocabswipe-newturuncu.png" alt="" class="brand-logo" />
         <span>VocabSwipe</span>
       </a>
-      <nav class="nav-links" id="navLinks">
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
         <a href="#features">Features</a>
-        <a href="#screenshots">Screenshots</a>
-        <a href="#about">About</a>
-        <a class="ghost-btn" href="privacy.html">Privacy</a>
-        <a class="ghost-btn" href="terms.html">Terms</a>
+        <a href="#screens">Screens</a>
+        <a href="#levels">Levels</a>
+        <a href="#workflow">Workflow</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
       </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
+
+      <a class="header-cta" href="https://play.google.com/apps/testing/com.vocabswipe">Google Play</a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
+    <section class="hero section-band" id="home">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Smart vocabulary builder</p>
-          <h1>Swipe, Review, and Master English Words in Minutes.</h1>
-          <p class="hero-text">VocabSwipe combines swipe-based learning with spaced repetition, daily goals, and pronunciation support to help you remember words effortlessly.</p>
+        <div class="hero-copy reveal">
+          <p class="kicker">A1-C2 English Vocabulary Builder</p>
+          <h1>Master English words with swipe cards, quizzes, and clear progress.</h1>
+          <p class="hero-lead">VocabSwipe turns 9,000+ CEFR words into a fast, focused daily learning flow with pronunciation, review lists, achievements, and offline access.</p>
+
           <div class="hero-actions">
-            <a href="#screenshots" class="primary-btn">See the App</a>
-            <a href="https://play.google.com/store" class="secondary-btn">Get it on Google Play</a>
+            <a class="btn btn-primary" href="https://play.google.com/apps/testing/com.vocabswipe" aria-label="Download VocabSwipe on Google Play">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5v15l12-7.5-12-7.5Z"/></svg>
+              Download Free
+            </a>
+            <a class="btn btn-ghost" href="#screens">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.75" width="10" height="18.5" rx="2.5"/><path d="M10.5 18h3"/></svg>
+              View Screens
+            </a>
           </div>
-          <div class="hero-stats">
-            <div>
-              <strong>4.8</strong>
-              <span>App rating</span>
-            </div>
+
+          <div class="metric-row" aria-label="VocabSwipe highlights">
             <div>
               <strong>9,000+</strong>
-              <span>Words to learn</span>
+              <span>curated words</span>
             </div>
             <div>
-              <strong>Fast</strong>
-              <span>Swipe-based learning</span>
+              <strong>A1-C2</strong>
+              <span>CEFR levels</span>
+            </div>
+            <div>
+              <strong>Offline</strong>
+              <span>learn anywhere</span>
             </div>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="logo-hero">
-            <img src="assets/vocabswipe-newturuncu.png" alt="VocabSwipe logo" />
+
+        <div class="hero-stage reveal" aria-label="VocabSwipe app preview">
+          <div class="phone phone-main">
+            <img src="assets/vs-ss3.jpg" alt="VocabSwipe vocabulary card screen" />
           </div>
-          <div class="phone-frame">
-            <img src="assets/vs-ss-10.jpg" alt="VocabSwipe app screenshot" />
+          <div class="phone phone-left" aria-hidden="true">
+            <img src="assets/vs-ss4.jpg" alt="" />
           </div>
+          <div class="phone phone-right" aria-hidden="true">
+            <img src="assets/vs-ss-10.jpg" alt="" />
+          </div>
+          <img class="hero-mark" src="assets/vocabswipe-seffaf.png" alt="" aria-hidden="true" />
         </div>
       </div>
     </section>
 
-    <section class="features" id="features">
-      <div class="container section-head">
-        <p class="eyebrow">Why VocabSwipe</p>
-        <h2>Designed for efficient and enjoyable vocabulary practice.</h2>
+    <section class="feature-strip" aria-label="Learning modes">
+      <div class="container strip-grid">
+        <div class="strip-item reveal">
+          <span class="strip-icon">A1</span>
+          <p>Start simple, grow steadily.</p>
+        </div>
+        <div class="strip-item reveal">
+          <span class="strip-icon">B2</span>
+          <p>Build confident exam vocabulary.</p>
+        </div>
+        <div class="strip-item reveal">
+          <span class="strip-icon">C2</span>
+          <p>Push into advanced nuance.</p>
+        </div>
+        <div class="strip-item reveal">
+          <span class="strip-icon">90</span>
+          <p>Keep daily goals realistic.</p>
+        </div>
       </div>
-      <div class="feature-grid">
-        <article>
-          <h3>Swipe to classify</h3>
-          <p>Swipe left for Known, right for Review, or up to Skip. The app learns with you and adapts fast.</p>
+    </section>
+
+    <section class="section-block" id="features">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="kicker">Designed for momentum</p>
+          <h2>A polished learning system, not another word list.</h2>
+          <p>Every interaction is built around quick recall, smart review, and visible progress.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="icon-badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h8M8 12h8M8 19h5"/><path d="m17 16 3 3-3 3"/></svg>
+            </div>
+            <h3>Swipe Classification</h3>
+            <p>Mark words as known, review, or skipped with gestures that feel natural on mobile.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-badge green">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h4l3-8 4 14 3-6h2"/></svg>
+            </div>
+            <h3>Daily Progress</h3>
+            <p>Set a daily goal, keep a streak, and see your learning rhythm without extra setup.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-badge blue">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 14.8 8.8 21 9.7l-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9L12 3Z"/></svg>
+            </div>
+            <h3>Achievement Badges</h3>
+            <p>Milestones give the app a rewarding sense of movement as vocabulary grows.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-badge pink">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M9.5 10a2.5 2.5 0 1 1 4 2c-1.2.8-1.5 1.2-1.5 2.5"/><path d="M12 17.5h.01"/></svg>
+            </div>
+            <h3>Quiz Challenge</h3>
+            <p>Practice active recall with level-based quizzes and instant answer feedback.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-badge teal">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6L8 10H4Z"/><path d="M17 9a4 4 0 0 1 0 6"/><path d="M19.5 6.5a8 8 0 0 1 0 11"/></svg>
+            </div>
+            <h3>Pronunciation Support</h3>
+            <p>Hear words clearly with voice options for a more complete study session.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="icon-badge amber">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v4H5zM5 10h14v10H5z"/><path d="M9 14h6"/></svg>
+            </div>
+            <h3>Level Filters</h3>
+            <p>Study A1, A2, B1, B2, C1, or C2 vocabulary without mixing the wrong difficulty.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="screens-section section-band" id="screens">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="kicker">Full app tour</p>
+          <h2>All core screens, shown with real app assets.</h2>
+          <p>Cards, gestures, quiz flow, results, badges, and settings are all represented.</p>
+        </div>
+      </div>
+
+      <div class="screen-rail" aria-label="VocabSwipe screenshots">
+        <article class="screen-card reveal">
+          <img src="assets/vs-ss3.jpg" alt="Vocabulary card screen" loading="lazy" />
+          <span>Vocabulary Cards</span>
         </article>
-        <article>
-          <h3>Daily practice</h3>
-          <p>Track your progress with daily goals, streaks, and fast review sessions designed for real improvement.</p>
+        <article class="screen-card reveal">
+          <img src="assets/vs-ss4.jpg" alt="Swipe known gesture screen" loading="lazy" />
+          <span>Swipe Known</span>
         </article>
-        <article>
-          <h3>Pronunciation support</h3>
-          <p>Listen to native-like pronunciation for every word, so you can practice both meaning and sound.</p>
+        <article class="screen-card reveal">
+          <img src="assets/vs-ss5.jpg" alt="Review gesture screen" loading="lazy" />
+          <span>Review Queue</span>
         </article>
-        <article>
-          <h3>Smart review</h3>
-          <p>Words move into review automatically, so you remember vocabulary instead of just memorizing it.</p>
+        <article class="screen-card reveal">
+          <img src="assets/vs-ss-6.jpg" alt="Detailed vocabulary screen" loading="lazy" />
+          <span>Definitions</span>
+        </article>
+        <article class="screen-card reveal">
+          <img src="assets/vs-ss-7.jpg" alt="Quiz question screen" loading="lazy" />
+          <span>Quiz Mode</span>
+        </article>
+        <article class="screen-card reveal">
+          <img src="assets/vs-ss2.jpg" alt="Quiz answer choices screen" loading="lazy" />
+          <span>Answer Choices</span>
+        </article>
+        <article class="screen-card reveal">
+          <img src="assets/vs-ss-9.jpg" alt="Quiz feedback screen" loading="lazy" />
+          <span>Score Feedback</span>
+        </article>
+        <article class="screen-card reveal">
+          <img src="assets/vs-ss-10.jpg" alt="Achievement badge screen" loading="lazy" />
+          <span>Badges</span>
+        </article>
+        <article class="screen-card reveal">
+          <img src="assets/vs-ss-11.jpg" alt="Settings screen" loading="lazy" />
+          <span>Settings</span>
         </article>
       </div>
     </section>
 
-    <section class="screenshots" id="screenshots">
-      <div class="container section-head">
-        <p class="eyebrow">Mobile experience</p>
-        <h2>See the app in action.</h2>
-      </div>
-      <div class="screenshot-grid">
-        <img src="assets/vs-ss-9.jpg" alt="VocabSwipe vocabulary cards" />
-        <img src="assets/vs-ss-10.jpg" alt="VocabSwipe practice screen" />
-        <img src="assets/vs-ss-11.jpg" alt="VocabSwipe daily goal screen" />
-        <img src="assets/vs-ss-7.jpg" alt="VocabSwipe review screen" />
+    <section class="level-section section-block" id="levels">
+      <div class="container level-grid">
+        <div class="section-heading left reveal">
+          <p class="kicker">A1 to C2 coverage</p>
+          <h2>Choose the difficulty that matches your next goal.</h2>
+          <p>VocabSwipe keeps levels visible, so learners can focus on the vocabulary band that matters today.</p>
+        </div>
+        <div class="level-board reveal" aria-label="CEFR levels">
+          <div><strong>A1</strong><span>Foundations</span></div>
+          <div><strong>A2</strong><span>Everyday words</span></div>
+          <div><strong>B1</strong><span>Core fluency</span></div>
+          <div><strong>B2</strong><span>Independent use</span></div>
+          <div><strong>C1</strong><span>Advanced range</span></div>
+          <div><strong>C2</strong><span>Precision</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="container about-card">
+    <section class="workflow section-band" id="workflow">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="kicker">Daily flow</p>
+          <h2>Open, swipe, review, repeat.</h2>
+        </div>
+
+        <div class="workflow-grid">
+          <article class="workflow-step reveal">
+            <span>01</span>
+            <h3>Pick a level</h3>
+            <p>Start from your CEFR range and keep the deck focused.</p>
+          </article>
+          <article class="workflow-step reveal">
+            <span>02</span>
+            <h3>Swipe the deck</h3>
+            <p>Move quickly through familiar and difficult words.</p>
+          </article>
+          <article class="workflow-step reveal">
+            <span>03</span>
+            <h3>Take quizzes</h3>
+            <p>Use short challenges to strengthen recall.</p>
+          </article>
+          <article class="workflow-step reveal">
+            <span>04</span>
+            <h3>Track growth</h3>
+            <p>Follow progress, streaks, and badges over time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-panel reveal">
         <div>
-          <p class="eyebrow">About the app</p>
-          <h2>Practical vocabulary training for all English levels.</h2>
-          <p>VocabSwipe is built for learners from A1 to C2 who want a faster, more engaging way to expand their vocabulary. It blends active recall with simple swipe gestures and keeps everything organized in one app.</p>
-          <ul>
-            <li>Adaptive word deck based on your progress</li>
-            <li>Simple, clean interface for distraction-free study</li>
-            <li>Progress tracking and achievement milestones</li>
-          </ul>
+          <img src="assets/vocabswipe-seffaf.png" alt="" class="cta-logo" />
+          <p class="kicker">Ready when you are</p>
+          <h2>Build an English vocabulary habit that actually feels good.</h2>
         </div>
-        <div class="about-visual">
-          <img src="assets/vs-ss-6.jpg" alt="VocabSwipe achievement screen" />
-        </div>
+        <a class="btn btn-primary" href="https://play.google.com/apps/testing/com.vocabswipe">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.5v15l12-7.5-12-7.5Z"/></svg>
+          Get VocabSwipe
+        </a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <a class="brand" href="#home">
-          <img src="assets/vocabswipe-newturuncu.png" alt="VocabSwipe logo" class="brand-logo" />
+          <img src="assets/vocabswipe-newturuncu.png" alt="" class="brand-logo" />
           <span>VocabSwipe</span>
         </a>
-        <p>Modern vocabulary learning with swipe logic, review, and daily goals.</p>
+        <p>Swipe-based English vocabulary learning for A1-C2 learners.</p>
       </div>
-      <div class="footer-links">
+      <div>
+        <h2>Product</h2>
+        <a href="#features">Features</a>
+        <a href="#screens">Screens</a>
+        <a href="#levels">Levels</a>
+      </div>
+      <div>
+        <h2>Legal</h2>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
-        <a href="https://play.google.com/store">Google Play</a>
       </div>
+      <div>
+        <h2>Contact</h2>
+        <a href="mailto:baseraitech@gmail.com">baseraitech@gmail.com</a>
+        <a href="https://baseraitech.github.io/vocabswipe/">Official Site</a>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>&copy; 2026 VocabSwipe. All rights reserved.</p>
     </div>
   </footer>
 </body>
