@@ -1,66 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy | VocabSwipe</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="VocabSwipe Privacy Policy - How we handle and protect your data">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .legal-container { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
+    .legal-section { margin-bottom: 32px; }
+    .legal-section h3 { font-size: 1.25rem; margin-top: 24px; margin-bottom: 12px; }
+    .legal-section p { line-height: 1.8; margin-bottom: 12px; color: #b8c0cc; }
+    .legal-section ul { margin: 12px 0; padding-left: 20px; }
+    .legal-section li { margin-bottom: 8px; color: #b8c0cc; }
+    .updated-date { color: #7f8a99; font-size: 0.9rem; margin-top: 20px; }
+  </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav-container">
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-shell">
       <a class="brand" href="index.html">
-        <img src="assets/vocabswipe-newturuncu.png" alt="VocabSwipe Logo" class="brand-logo" />
+        <img src="assets/vocabswipe-newturuncu.png" alt="VocabSwipe logo" class="brand-logo">
         <span>VocabSwipe</span>
       </a>
-      <nav class="nav-links">
+      <nav class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
       </nav>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
   <main>
-    <section class="hero" style="padding-bottom: 2rem;">
-      <div class="container section-head">
-        <p class="eyebrow">Privacy Policy</p>
-        <h2>How VocabSwipe handles your data.</h2>
-        <p class="hero-text">Your privacy matters. VocabSwipe is designed to collect only the information needed to improve your learning experience while keeping your data safe and private.</p>
+    <section class="hero section-band" style="padding-top: 140px; padding-bottom: 60px; min-height: auto;">
+      <div class="container">
+        <h1 style="font-size: 2.5rem; margin-bottom: 16px;">Privacy Policy</h1>
+        <p style="font-size: 1.05rem; color: #b8c0cc; max-width: 700px;">Last updated: June 3, 2026</p>
+        <p style="font-size: 1.05rem; color: #b8c0cc; max-width: 700px; margin-top: 20px;">VocabSwipe ("the App", "we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
       </div>
     </section>
 
-    <section class="features">
-      <div class="container" style="max-width: 900px;">
-        <article>
-          <h3>Data We Collect</h3>
-          <p>VocabSwipe stores only the vocabulary progress and learning preferences required to personalize your study routine. We do not collect personal identifiers such as your name, email address, or location unless you explicitly provide them.</p>
-        </article>
-        <article>
-          <h3>How We Use Data</h3>
-          <p>Progress data is used to generate review sessions, track your daily goals, and unlock achievements. This information stays on your device and is not shared with third parties.</p>
-        </article>
-        <article>
-          <h3>Third-Party Services</h3>
-          <p>VocabSwipe does not integrate with any analytics or advertising platforms by default. If you download the app from Google Play, standard store listing services may collect usage statistics independently.</p>
-        </article>
-        <article>
-          <h3>Security</h3>
-          <p>We use local storage and SQLite management to keep your data safe. We recommend using secure device settings and screen locks to prevent unauthorized access.</p>
-        </article>
+    <section class="section-block">
+      <div class="legal-container">
+
+        <div class="legal-section">
+          <h3>1. Information We Collect</h3>
+          <p>VocabSwipe is designed with privacy in mind. We collect only the information necessary to provide the App's core functionality:</p>
+          <ul>
+            <li><strong>Learning Progress Data:</strong> Your vocabulary review history, word mastery levels, quiz scores, and daily learning streaks are stored locally on your device.</li>
+            <li><strong>User Preferences:</strong> Your selected language level (A1-C2), daily goal settings, theme preference, and word type filters.</li>
+            <li><strong>Device Information (via Google Play):</strong> If you download from Google Play Store, standard analytics may collect device type, OS version, app version, and crash logs to improve stability.</li>
+            <li><strong>Optional Information:</strong> If you contact us for support, we may collect your email address, messages, and any attachments you voluntarily provide.</li>
+          </ul>
+          <p><strong>What We Do NOT Collect:</strong> We do not collect your name, precise location, contact list, photos, videos, browsing history, or biometric data unless you explicitly share it.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>2. How We Use Your Information</h3>
+          <p>Your information is used for the following purposes:</p>
+          <ul>
+            <li>Personalizing your learning experience and tracking progress</li>
+            <li>Generating customized review sessions and quiz challenges</li>
+            <li>Storing achievement badges and daily goal milestones</li>
+            <li>Responding to support requests and improving App functionality</li>
+            <li>Detecting and preventing fraud, abuse, or security violations</li>
+          </ul>
+          <p><strong>We never sell, rent, or share your personal data with third-party marketers or advertisers.</strong></p>
+        </div>
+
+        <div class="legal-section">
+          <h3>3. Data Storage and Local Processing</h3>
+          <p>VocabSwipe primarily stores your learning data locally on your device using encrypted SQLite databases. This means:</p>
+          <ul>
+            <li>Your vocabulary progress stays on your phone or tablet</li>
+            <li>Your data is not automatically synced to our servers (unless you enable cloud backup in future versions)</li>
+            <li>Uninstalling the app will delete locally stored data</li>
+            <li>You have full control over when and how your data is shared</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>4. Third-Party Services and Analytics</h3>
+          <p><strong>Google Play Store Analytics:</strong> When you download VocabSwipe from Google Play, Google collects usage statistics, crash reports, and device information in accordance with Google's Privacy Policy. VocabSwipe does not integrate third-party analytics libraries beyond what Google Play provides by default.</p>
+          <p><strong>No Advertising:</strong> VocabSwipe does not currently serve advertisements. We do not use advertising SDKs or tracking networks.</p>
+          <p><strong>No Social Media Integration:</strong> The App does not integrate with Facebook, Twitter, or other social networks for tracking or sharing purposes.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>5. Children's Privacy (COPPA Compliance)</h3>
+          <p>VocabSwipe is designed for learners of all ages, including children. We comply with the Children's Online Privacy Protection Act (COPPA) and similar regulations:</p>
+          <ul>
+            <li>We do not knowingly collect personal information from children under 13 without verifiable parental consent</li>
+            <li>We do not use behavioral advertising or tracking targeting children</li>
+            <li>Parents can request deletion of their child's data at any time</li>
+            <li>All data processing is limited to providing the App's educational service</li>
+          </ul>
+          <p>If you believe we have collected information from a child in violation of COPPA, please contact us immediately at the email below.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>6. GDPR and Data Subject Rights (EU Users)</h3>
+          <p>If you are a resident of the European Union, you have the following rights under the General Data Protection Regulation (GDPR):</p>
+          <ul>
+            <li><strong>Right to Access:</strong> Request a copy of all data we hold about you</li>
+            <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete information</li>
+            <li><strong>Right to Erasure:</strong> Request permanent deletion of your data (the "right to be forgotten")</li>
+            <li><strong>Right to Restrict Processing:</strong> Limit how we use your information</li>
+            <li><strong>Right to Data Portability:</strong> Export your data in a machine-readable format</li>
+            <li><strong>Right to Object:</strong> Opt out of certain processing activities</li>
+          </ul>
+          <p>To exercise any of these rights, contact us using the information in Section 10 below. We will respond within 30 days.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>7. Data Security</h3>
+          <p>We implement industry-standard security measures to protect your data:</p>
+          <ul>
+            <li>Encrypted local storage using SQLite with standard encryption</li>
+            <li>Secure app distribution through official app stores only</li>
+            <li>Regular security updates and patches</li>
+            <li>No transmission of sensitive data over unencrypted channels</li>
+          </ul>
+          <p>While we strive to protect your data, no security system is 100% impenetrable. We recommend using a device PIN or biometric lock to secure your phone.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>8. Data Retention</h3>
+          <p>Your learning data is retained as long as you use VocabSwipe and for a reasonable period after account inactivity (if applicable in future versions). When you uninstall the app, all locally stored data is deleted. If you request data deletion, we will remove your information within 30 days.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>9. Disclosure of Data</h3>
+          <p>We do not share your personal data with third parties except in the following circumstances:</p>
+          <ul>
+            <li><strong>Legal Requirement:</strong> To comply with court orders, law enforcement requests, or legal obligations</li>
+            <li><strong>Protection of Rights:</strong> To protect our legal rights, prevent fraud, or ensure app security</li>
+            <li><strong>Service Providers:</strong> To trusted vendors who assist us (e.g., cloud hosting, if adopted), under strict confidentiality agreements</li>
+            <li><strong>Aggregated Data:</strong> We may share anonymized, non-identifiable statistics about app usage with researchers or partners</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h3>10. Contact Us</h3>
+          <p>If you have questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:</p>
+          <ul>
+            <li><strong>Email:</strong> privacy@vocabswipe.app or baseraitech@gmail.com</li>
+            <li><strong>Mailing Address:</strong> Available upon request for GDPR Data Subject Access Requests</li>
+          </ul>
+          <p>We will respond to privacy inquiries within 7-10 business days.</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>11. Policy Changes</h3>
+          <p>We may update this Privacy Policy periodically. Changes will be posted here with an updated "Last Modified" date. Continued use of VocabSwipe constitutes acceptance of any revised Privacy Policy. We will notify you of material changes via the App or email (if contact information is available).</p>
+        </div>
+
+        <div class="legal-section">
+          <h3>12. Additional Information</h3>
+          <p><strong>App Store Compliance:</strong> VocabSwipe complies with Google Play Store's data privacy and security requirements, including:</p>
+          <ul>
+            <li>Transparent disclosure of data collection and use</li>
+            <li>Permission-based access to device features</li>
+            <li>Regular security audits and updates</li>
+            <li>Clear options for users to manage their data</li>
+          </ul>
+          <p><strong>Data Processing Agreement:</strong> If you represent an organization and need a Data Processing Agreement (DPA) for GDPR compliance, please contact us.</p>
+        </div>
+
+        <p class="updated-date">This Privacy Policy is effective as of June 3, 2026. Your trust is important to us.</p>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <p>VocabSwipe Privacy Policy</p>
+        <a class="brand" href="index.html">
+          <img src="assets/vocabswipe-newturuncu.png" alt="VocabSwipe logo" class="brand-logo">
+          <span>VocabSwipe</span>
+        </a>
+        <p>Swipe-based English vocabulary learning for A1-C2 learners.</p>
       </div>
-      <div class="footer-links">
+      <div>
+        <h2>Product</h2>
         <a href="index.html">Home</a>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
       </div>
+      <div>
+        <h2>Contact</h2>
+        <a href="mailto:baseraitech@gmail.com">baseraitech@gmail.com</a>
+      </div>
+    </div>
+    <div class="container copyright">
+      <p>;&copy; 2026 VocabSwipe. All rights reserved.</p>
     </div>
   </footer>
+
+  <script defer src="script.js"></script>
 </body>
 </html>
